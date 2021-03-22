@@ -83,7 +83,8 @@ def print_results(encrypted_message, list_of_results):
 def caeser_cipher():
     prompt_user = True
     while(prompt_user):
-        choice = input("Would you like to Encrypt or Decrypt? Enter E or D.")
+        print("Would you like to Encrypt or Decrypt? Enter E or D.")
+        choice = input(">")
         if(choice == "E" or choice == "e"):
             print("Please enter your message to encrypt.")
             print("Only letters and spaces may be entered.")
